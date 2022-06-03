@@ -17,6 +17,9 @@
 		90DCF11A2849AE5800426188 /* SampleCallToObjectiveCPackage2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCF1192849AE5800426188 /* SampleCallToObjectiveCPackage2Tests.m */; };
 		90DCF1242849AE5800426188 /* SampleCallToObjectiveCPackage2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCF1232849AE5800426188 /* SampleCallToObjectiveCPackage2UITests.m */; };
 		90DCF1262849AE5800426188 /* SampleCallToObjectiveCPackage2UITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90DCF1252849AE5800426188 /* SampleCallToObjectiveCPackage2UITestsLaunchTests.m */; };
+		90DCF1342849AE9A00426188 /* LibAll in Frameworks */ = {isa = PBXBuildFile; productRef = 90DCF1332849AE9A00426188 /* LibAll */; };
+		90DCF1362849AE9A00426188 /* LibCore in Frameworks */ = {isa = PBXBuildFile; productRef = 90DCF1352849AE9A00426188 /* LibCore */; };
+		90DCF1382849AE9A00426188 /* LibFull in Frameworks */ = {isa = PBXBuildFile; productRef = 90DCF1372849AE9A00426188 /* LibFull */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90DCF1382849AE9A00426188 /* LibFull in Frameworks */,
+				90DCF1342849AE9A00426188 /* LibAll in Frameworks */,
+				90DCF1362849AE9A00426188 /* LibCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,11 @@
 			dependencies = (
 			);
 			name = SampleCallToObjectiveCPackage2;
+			packageProductDependencies = (
+				90DCF1332849AE9A00426188 /* LibAll */,
+				90DCF1352849AE9A00426188 /* LibCore */,
+				90DCF1372849AE9A00426188 /* LibFull */,
+			);
 			productName = SampleCallToObjectiveCPackage2;
 			productReference = 90DCF0FA2849AE5600426188 /* SampleCallToObjectiveCPackage2.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +234,9 @@
 				Base,
 			);
 			mainGroup = 90DCF0F12849AE5600426188;
+			packageReferences = (
+				90DCF1322849AE9A00426188 /* XCRemoteSwiftPackageReference "ObjectiveCPackageCallCasperSDK" */,
+			);
 			productRefGroup = 90DCF0FB2849AE5600426188 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -613,6 +627,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90DCF1322849AE9A00426188 /* XCRemoteSwiftPackageReference "ObjectiveCPackageCallCasperSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hienbui9999/ObjectiveCPackageCallCasperSDK.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90DCF1332849AE9A00426188 /* LibAll */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90DCF1322849AE9A00426188 /* XCRemoteSwiftPackageReference "ObjectiveCPackageCallCasperSDK" */;
+			productName = LibAll;
+		};
+		90DCF1352849AE9A00426188 /* LibCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90DCF1322849AE9A00426188 /* XCRemoteSwiftPackageReference "ObjectiveCPackageCallCasperSDK" */;
+			productName = LibCore;
+		};
+		90DCF1372849AE9A00426188 /* LibFull */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90DCF1322849AE9A00426188 /* XCRemoteSwiftPackageReference "ObjectiveCPackageCallCasperSDK" */;
+			productName = LibFull;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 90DCF0F22849AE5600426188 /* Project object */;
 }
