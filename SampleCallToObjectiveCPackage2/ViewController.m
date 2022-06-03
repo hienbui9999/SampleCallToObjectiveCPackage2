@@ -24,7 +24,6 @@ int max = 50;
         timer = nil;
     }
     counter ++;
-    NSLog(@"Timer counter:%d",counter);
     if(counter == max) {
         [timer invalidate];
         timer = nil;
